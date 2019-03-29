@@ -6,6 +6,10 @@ const products = require('../products.json');
 //     response.status(200).send(products) 
 // });
 
+// app.get('/api/products', getProducts);
+
+
+
 const getProducts = (req, res) => {
     res.status(200).send(products);
 }
