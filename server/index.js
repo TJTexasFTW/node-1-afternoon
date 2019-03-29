@@ -1,11 +1,9 @@
 const express = require("express");
 const app = express();
-const products = require('../products.json');
+const getProducts = require('./getProducts')
+// const products = require('../products.json');
 
-app.get("/api/products/", (request, response) => {
-    response.status(200).send(products) 
-});
-
+app.get('/api/products', getProducts);
 
 
 
