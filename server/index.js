@@ -1,6 +1,10 @@
 const express = require("express");
 const app = express();
-// const users = require("./users");
+const products = require('../products.json');
+
+app.get("/api/products/", (request, response) => {
+    response.status(200).send(products) 
+});
 
 
 
